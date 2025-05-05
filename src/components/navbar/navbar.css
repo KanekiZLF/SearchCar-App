@@ -1,0 +1,75 @@
+.nvb-container {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#0c0c0c, #323232);
+    color: #fff;
+}
+
+.nvb-content {
+    width: 1200px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nvb-content h1 {
+    font-size: 26px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nvb-content ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.nvb-content ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 60px;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.nvb-content ul li:hover {
+    width: 100px;
+    height: 60px;
+    background-color: #fff;
+    color: #323232;
+    outline: 2px solid #323232;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.nvb-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.nvb-contato svg {
+    margin-right: 5px;
+}
+
+.nvb-socialmedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nvb-socialmedia svg {
+    width: 22px;
+    height: 22px;
+    margin-right: 15px;
+    cursor: pointer;
+}
