@@ -3,6 +3,8 @@ import Carousel from "../../components/carousel/Carousel";
 import Navbar from '../../components/navbar/Navbar'
 import ShopWindow from "../../components/shopwindow/ShopWindow";
 import Contact from "../../components/contact/Contact";
+import Service from "../../components/service/Service";
+import Footer from "../../components/footer/Footer";
 
 
 const Home = () => {
@@ -12,6 +14,8 @@ const Home = () => {
       <Carousel />
       <ShopWindow />
       <Contact />
+      <Service />
+      <Footer />
     </>
   )
 }

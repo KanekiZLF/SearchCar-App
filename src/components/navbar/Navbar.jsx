@@ -1,4 +1,5 @@
 import "./navbar.css";
+import { Link } from "react-router";
 import {FaFacebook, FaInstagram, FaWhatsapp, FaYoutube} from "react-icons/fa"
 
 // Componente da NavBar
@@ -9,7 +10,7 @@ const Navbar = () => {
             <h1>SearchCar</h1>
             <ul>
                 <li>Home</li>
-                <li>Estoque</li>
+                <li><Link to="/car">Estoque</Link></li>
                 <li>Venda</li>
                 <li>Compra</li>
                 <li>Contato</li>

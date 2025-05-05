@@ -1,0 +1,38 @@
+.svc-container {
+    width: 100%;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.svc-content {
+    width: 1200px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.svc-card {
+    width: 260px;
+    height: 280px;
+    background-color: rgb(254, 254, 254);
+    padding: 20px 20px;
+    border-radius: 5px;
+    border-top: 5px solid #323232;
+    box-shadow: 0px 3px 15px -3px rgba(0,0,0,0.1);
+}
+
+.svc-card h1 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.svc-card span {
+    font-size: 15px;
+    font-weight: 400;
+}
