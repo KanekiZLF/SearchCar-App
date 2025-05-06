@@ -18,3 +18,20 @@
     gap: 25px;
     margin-top: 40px;
 }
+
+.spw-content button {
+    width: 280px;
+    height: 45px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #323232;
+    cursor: pointer;
+}
+
+.spw-content button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}

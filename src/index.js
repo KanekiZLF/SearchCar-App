@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import Car from './pages/car/Car';
+import Estoque from "./pages/estoque/Estoque"
 
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
 import reportWebVitals from './reportWebVitals';
@@ -11,7 +12,10 @@ import Contact from './pages/contact/Contact';
 const router = createBrowserRouter([
   {path: "/", element: <App />},
   {path: "/car", element: <Car />},
+  {path: "/car/:id", element: <Car /> },
   {path: "/contact", element: <Contact />},
+  {path: "/estoque", element: <Estoque />},
+
 
 ])
 
