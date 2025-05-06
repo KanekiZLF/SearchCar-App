@@ -1,6 +1,6 @@
 .est-container {
     width: 100%;
-    height: 260px;
+    height: 1620px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,10 +9,11 @@
 
 .est-content {
     width: 1200px;
-    height: 260px;
+    height: 1620px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 .est-banner {
@@ -61,3 +62,12 @@
     height: 22px;
 }
 
+.est-vitrine {
+    width: 1200px;
+    height: 1320;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 25px;
+}

@@ -6,10 +6,10 @@ import {
     BsFillArrowRightCircleFill,
     } from "react-icons/bs";
 
-const CarouselSmall = () => {
+const CarouselSmall = ({ images }) => {
   const [slide, setSlide] = useState(0);
   
-  const vitrine = [
+  /*const vitrine = [
     {id: 1, url: "./assets/images/vitrine/carro1.jpg"},
     {id: 2, url: "./assets/images/vitrine/carro2.jpg"},
     {id: 3, url: "./assets/images/vitrine/carro3.jpg"},
@@ -18,16 +18,16 @@ const CarouselSmall = () => {
     {id: 6, url: "./assets/images/vitrine/carro6.jpg"},
     {id: 7, url: "./assets/images/vitrine/carro7.jpg"},
     {id: 8, url: "./assets/images/vitrine/carro8.jpg"},
-  ];
+  ];*/
 
   const navPrev = () => {
       const isFirst = slide === 0;
-      const prevSlide = isFirst ? vitrine.length -1 : slide - 1;
+      const prevSlide = isFirst ? images.length -1 : slide - 1;
       setSlide(prevSlide);
   };
 
   const navNext = () => { 
-      const isLast = slide === vitrine.length - 1;
+      const isLast = slide === images.length - 1;
       const nextSlide = isLast ? 0 : slide + 1;
       setSlide(nextSlide);
   };
@@ -46,7 +46,7 @@ const CarouselSmall = () => {
         <div 
           className="crsm-item"
           style={{
-            backgroundImage: `url(${vitrine[slide].url})`,
+            backgroundImage: `url(${images[slide].url})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
@@ -56,7 +56,7 @@ const CarouselSmall = () => {
 
         <div className="crsm-dots">
             {
-              vitrine.map((image, index) => (
+              images.map((image, index) => (
                 <BsCircleFill
                 key={image.id} 
                 onClick={() => navDot(index)}

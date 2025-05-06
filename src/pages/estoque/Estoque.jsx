@@ -1,7 +1,9 @@
 import Navbar from '../../components/navbar/Navbar'
 import Footer from "../../components/footer/Footer";
+import Card from "../../components/card/Card"
 import {BiSearch} from "react-icons/bi"
 import "./estoque.css"
+import { carInfo } from '../../data/car';
 
 const Estoque = () => {
   return (
@@ -22,7 +24,11 @@ const Estoque = () => {
             </div>
 
             <div className="est-vitrine">
-              
+              {
+                carInfo.slice(0,12).map((item, index) =>(
+                  <Card key={index} item={item} />
+                ))
+              }
             </div>
         </div>
       </div>
