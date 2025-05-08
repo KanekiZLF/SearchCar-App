@@ -1,3 +1,5 @@
+// Não irei utilizar pois é redundante ! Pode ser usado apenas o car.js para tudo de maneira mais eficaz !
+
 export const carInfo = [
     {
         id: 1,

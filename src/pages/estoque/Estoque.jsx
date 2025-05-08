@@ -4,8 +4,14 @@ import Card from "../../components/card/Card"
 import {BiSearch} from "react-icons/bi"
 import "./estoque.css"
 import { carInfo } from '../../data/car';
+import { useState } from 'react';
 
 const Estoque = () => {
+
+  const [cards, setCards] = useState(null)
+  const [skip, setSkip] = useState(0)
+  const [search,setSearch] = useState("")
+
   return (
     <>
       <Navbar />

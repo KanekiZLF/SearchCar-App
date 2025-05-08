@@ -1,7 +1,7 @@
 import "./shopwindow.css";
 import Card from "../card/Card";
 import { Link } from "react-router";
-import { carInfo } from "../../data/car"; // caminho correto para o seu vitrine.js
+import { carInfo } from "../../data/car";
 
 const ShopWindow = () => {
   return (
