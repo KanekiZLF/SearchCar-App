@@ -11,7 +11,7 @@ const LIMIT = 12;
 
 const Estoque = () => {
 
-  const [cards, setCards] = useState(null);
+  const [cards, setCards] = useState(0);
   const [skip, setSkip] = useState(0);
   const [search,setSearch] = useState("");
 
@@ -20,7 +20,7 @@ const Estoque = () => {
       return carInfo.slice(skip, end)
     }
     setCards(searchCards(skip, skip === 0 ? 1 * LIMIT : skip * LIMIT)); 
-  }, [skip])
+  }, [skip]);
 
   const searchCar = (searchedText) => {
     const resultCars = carInfo.filter((text) => (
@@ -39,13 +39,12 @@ const Estoque = () => {
                 <h2>
                   Carros selecionados pelo nosso time para garantir uma otima compra do seu usado                  
                 </h2>
+              </div>
 
-                <div className="est-search-content">
-                  <input type="text" id="txtSearch" onChange={(e) => setSearch(e.target.value)} />
-                  <BiSearch onClick={() => searchCar(search)}/>
-                </div>
-            </div>
-
+              <div className="est-search-content">
+                <input type="text" id="txtSearch" onChange={(e) => setSearch(e.target.value)} />
+                <BiSearch onClick={() => searchCar(search)}/>
+              </div>
             <div className="est-vitrine">
               {
                 cards && cards.map((item, index) => {
@@ -53,16 +52,15 @@ const Estoque = () => {
                   return <Card key={index} item={car} />
                 })}
             </div>
-        </div>
-
-        <div className="est-vitrine-pagination">
-
-          <Pagination 
-          limit={LIMIT} 
-          total={carInfo.length} 
-          skip={skip} 
-          setSkip={setSkip} 
-          />
+            
+          <div className="est-vitrine-pagination">
+            <Pagination 
+              limit={LIMIT} 
+              total={carInfo.length} 
+              skip={skip} 
+              setSkip={setSkip} 
+            />
+          </div>
         </div>
       </div>
       <Footer />

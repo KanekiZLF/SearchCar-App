@@ -16,8 +16,8 @@ const Pagination = ({ limit, total, skip, setSkip }) => {
       {
         Array.from({ length: Math.min(MAX_PAGES, totalPages) }).map((item, index)=> (
           index + firstPage
-        )).map((item) => (
-          <button onClick={() => setSkip(item - 1 * limit)} >{item}</button>
+        )).map((item) => ( 
+          <button key={item} onClick={() => setSkip(item - 1) * limit} >{item}</button>
         ))
       }
       <button>Próximo</button>

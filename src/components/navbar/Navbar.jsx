@@ -10,7 +10,7 @@ const Navbar = () => {
             <h1>SearchCar</h1>
             <ul>
                 <li>Home</li>
-                <li><Link to="/car">Estoque</Link></li>
+                <li><Link to="/estoque">Estoque</Link></li>
                 <li>Venda</li>
                 <li>Compra</li>
                 <li>Contato</li>
