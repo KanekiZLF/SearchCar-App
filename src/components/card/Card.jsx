@@ -1,11 +1,20 @@
 import "./card.css";
 import { FaMapMarkedAlt } from "react-icons/fa";
 import CarouselSmall from "../carousel/CarouselSmall";
+import { useNavigate } from "react-router-dom";
 
-const Card = ({ item }) => {
+const Card = ({ item }) => { 
+  
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/car/${item.id}`);
+  };
+  
     if (!item) return null; // ou um "Loading..." / placeholder
+
   return (
-    <div className="crd-container">
+    <div className="crd-container" onClick={handleClick}>
       <div className="crd-top">
         <CarouselSmall images={item.imgCard} />
       </div>
