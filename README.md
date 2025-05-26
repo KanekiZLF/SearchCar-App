@@ -1,70 +1,66 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🌐 Projeto: Site e Admin Dashboard MERN Stack
 
-## Available Scripts
+## 🧩 Tecnologias Utilizadas
 
-In the project directory, you can run:
+- **Frontend**: React.js  
+- **Backend**: Node.js + Express  
+- **Banco de Dados**: MongoDB  
+- **Autenticação**: JWT (JSON Web Token)  
+- **Interface de Tabela**: MUI DataTable (Material-UI)  
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🗂️ Estrutura do Projeto
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 📌 Site (Frontend Público)
+- Interface moderna e responsiva.
+- Navegação fluida utilizando React Router.
+- Integração com a API para exibição de dados dinâmicos.
+- Interface pensada para o usuário final, com foco em usabilidade.
 
-### `npm test`
+### 🛠️ Admin Dashboard
+- Autenticação com JWT para controle de acesso.
+- Tabelas dinâmicas usando **MUI DataTable**.
+- Ações CRUD (Criar, Ler, Atualizar, Deletar).
+- Sistema de gerenciamento de usuários e conteúdos.
+- Painel estatístico com gráficos e informações gerenciais (opcional).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🔐 Segurança
+- JWT para autenticação segura e persistência de sessão.
+- Rotas protegidas no frontend e backend.
+- Validação de entrada no backend para evitar injeções e falhas comuns.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📡 Comunicação entre Frontend e Backend
+- API RESTful usando Express.
+- Requisições assíncronas com `axios` para chamadas HTTP.
+- Middleware para verificação de token.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🎯 Objetivos do Projeto
+- Criar um sistema completo de administração para gerenciamento de dados.
+- Praticar e aplicar conceitos avançados de desenvolvimento Full Stack.
+- Desenvolver um layout profissional com MUI e boas práticas de UI/UX.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📅 Status Atual
+- [x] Estrutura básica criada  
+- [ ] Integração com MongoDB  
+- [ ] Autenticação com JWT funcionando  
+- [ ] Tela de dashboard finalizada  
+- [ ] CRUD completo implementado  
+- [ ] Deploy na nuvem (Vercel / Render / MongoDB Atlas)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🚀 Próximos Passos
+- Finalizar as interfaces de gerenciamento.
+- Adicionar testes automatizados.
+- Implementar paginação e filtros nas tabelas.
+- Lançar uma versão beta para testes.
