@@ -8,12 +8,14 @@ import Estoque from "./pages/estoque/Estoque"
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
 import reportWebVitals from './reportWebVitals';
 import Contact from './pages/contact/Contact';
+import Home from './pages/home/Home';
 
 const router = createBrowserRouter([
   {path: "/", element: <App />},
   {path: "/car", element: <Car />},
   {path: "/car/:id", element: <Car /> },
   {path: "/contact", element: <Contact />},
+  {path: "/home", element: <Home />},
   {path: "/estoque", element: <Estoque />},
 
 

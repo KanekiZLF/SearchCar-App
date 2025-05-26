@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className="nvb-content">
             <h1>SearchCar</h1>
             <ul>
-                <li>Home</li>
+                <li><Link to="/home">Home</Link></li>
                 <li><Link to="/estoque">Estoque</Link></li>
                 <li>Venda</li>
                 <li>Compra</li>

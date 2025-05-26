@@ -17,6 +17,7 @@
     justify-content: space-between;
     flex-direction: column;
     padding: 15px 20px;
+    cursor: pointer;
 }
 
 .crd-carinfo h1 {

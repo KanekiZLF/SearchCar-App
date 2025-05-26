@@ -14,12 +14,12 @@ const Card = ({ item }) => {
     if (!item) return null; // ou um "Loading..." / placeholder
 
   return (
-    <div className="crd-container" onClick={handleClick}>
+    <div className="crd-container">
       <div className="crd-top">
         <CarouselSmall images={item.imgCard} />
       </div>
 
-      <div className="crd-bottom">
+      <div className="crd-bottom" onClick={handleClick}>
         <div className="crd-carinfo">
           <h1>{item.marca}</h1>
           <h2>{item.modelo}</h2>
