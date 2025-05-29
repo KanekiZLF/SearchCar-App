@@ -1,5 +1,5 @@
 
-# 🌐 Projeto: Site e Admin Dashboard MERN Stack
+# 🌐 Projeto: Site e Admin Dashboard MERN Stack (DESCONTINUADO)
 
 ## 🧩 Tecnologias Utilizadas
 

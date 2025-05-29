@@ -6,6 +6,7 @@
     align-items: center;
     background-image: linear-gradient(#0c0c0c, #323232);
     color: #fff;
+    text-decoration: none;
 }
 
 .nvb-content {
@@ -37,6 +38,24 @@
     font-size: 15px;
     font-weight: 400;
     cursor: pointer;
+    transition: transform 0.2s ease; /* animação suave */
+
+}
+
+.nvb-content ul li a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease; /* animação suave */
+}
+
+.nvb-content ul li:hover a {
+    color: #323232;
+    transform: scale(1.1); /* aumenta 10% */
 }
 
 .nvb-content ul li:hover {
@@ -47,6 +66,7 @@
     outline: 2px solid #323232;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    transform: scale(1.1); /* aumenta 10% */
 }
 
 .nvb-contato {

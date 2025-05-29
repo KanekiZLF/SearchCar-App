@@ -7,7 +7,10 @@ import Service from "../../components/service/Service";
 import Footer from "../../components/footer/Footer";
 
 
+
+
 const Home = () => {
+
   return (
     <>
       <Navbar />
@@ -17,7 +20,8 @@ const Home = () => {
       <Service />
       <Footer />
     </>
-  )
-}
+  );
+};
+
 
 export default Home
